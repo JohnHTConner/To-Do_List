@@ -50,7 +50,7 @@ const handleAddTaskForCategory = (category, items, setFunction, currentTask) => 
     Keyboard.dismiss();
     if (currentTask.trim() !== '') {
         setFunction([...items, currentTask]);
-        setFunction(' ');
+        setFunction('');
     }
 };
 
@@ -159,14 +159,14 @@ const handleAddTaskForCategory = (category, items, setFunction, currentTask) => 
           {/*Uni add button*/}
           <TouchableOpacity onPress={() => handleUniAddTask()}>
           <View style={styles.addWrapper2}>
-            <Text style={styles.addText2}>+</Text>
+            <Text style={styles.addText}>+</Text>
           </View>
           </TouchableOpacity>
           
           {/*Travel add button */}
           <TouchableOpacity onPress={() => handleTravelAddTask()}>
           <View style={styles.addWrapper3}>
-            <Text style={styles.addText3}>+</Text>
+            <Text style={styles.addText}>+</Text>
           </View>
           </TouchableOpacity>
 
@@ -263,6 +263,7 @@ const styles = StyleSheet.create({
   writeTaskWrapper: {
     position: 'absolute',
     bottom: 60,
+    right: 17,
     width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -277,7 +278,7 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     borderColor: '#C0C0C0',
     borderWidth: 1,
-    width: 250,
+    width: 165,
     height: 60,
     paddingTop: 20,
     color: '#000000', 
@@ -294,8 +295,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#C0C0C0',
     borderWidth: 1,
-    marginBottom: 140,
-    marginLeft: 135,
+    
    
   },
 
@@ -309,7 +309,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#C0C0C0',
     borderWidth: 1,
-    marginLeft: 0,
+    
     
   },
 
@@ -323,16 +323,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#C0C0C0',
     borderWidth: 1,
-    marginTop: 130,
-    marginRight: 35,
+    
     
   },
 
   addText: {},
 
-  addText2:{},
 
-  addText3:{},
 
 });
 
