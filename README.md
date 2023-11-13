@@ -4,7 +4,7 @@ A Simple To-do list mobile application developed using React Native.
 
 The app is built on Expo Go, which makes the application accesible on both IOS and Android devices.
 
-![Screenshot of an IPhone Simulator running To-Do List App](https://github.com/bdlm-dev/todo-list-app/blob/master/assets/app_example.png)
+![Screenshot of an IPhone Simulator running To-Do List App](https://i.imgur.com/D7Oxa2S.png)
 
 ## Features
 
